@@ -28,7 +28,8 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-
+    "accounts",
+    "tools"
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -137,3 +138,5 @@ CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5500",
 ]
+
+AUTH_USER_MODEL = "accounts.User"
